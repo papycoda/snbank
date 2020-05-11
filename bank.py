@@ -20,7 +20,7 @@ def genesis():
             #print(passkeys)                                                                            ##(test script)
             if username in user_names_list and password in passkeys:
                 print("____-----WELCOME TO SN BANK-----_____")
-                with open('session.txt', 'w') as f:
+                with open('sessions.txt', 'w') as f:
                     f.write('{}\n'.format(username))
                     f.write('{}\n'.format(password))
                 show_account_options()
@@ -84,8 +84,8 @@ def show_account_options():
             print("------------Thank you, You are logged out---------------")
             # delete user sessions
             import os
-            if os.path.exists("session.txt"):
-                os.remove("session.txt")
+            if os.path.exists("sessions.txt"):
+                os.remove("sessions.txt")
         else:
             print("------------Please Try again---------------")
     except ValueError:
