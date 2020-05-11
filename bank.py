@@ -45,7 +45,7 @@ def check_file_exist(filename):
 
 
 def fetch_account_details(acctno):
-  with open('customer.txt', 'r') as f:
+  with open('customers.txt', 'r') as f:
       read_data = f.readlines()
       f.close()
       if acctno == read_data[4].strip('\n'):
@@ -65,7 +65,7 @@ def show_account_options():
             accountNumber = get_account_no(10)
             accountDetails = [accountName, openingBalance, accountType, accountEmail, accountNumber]
             # Store details in customer file
-            with open('customer.txt', 'w') as writer:
+            with open('customers.txt', 'w') as writer:
                 for item in accountDetails:
                     writer.write("{}\n".format(item))
             print('Your account has been created with account number {}'.format(accountNumber))
