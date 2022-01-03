@@ -1,5 +1,5 @@
 # snbank
-a banking system management with CRUD properties 
+A command line based banking system management with CRUD properties 
 
 On run, the program presents the following options:
 
@@ -44,3 +44,6 @@ If staff selects logout in (4) above, delete the user session file and return th
  
 
 And finally, if staff selects Close App, the program should terminate.
+############################################################################
+
+This is outdated now . i would be fleshing it out and creating a proper gui this year 2022
